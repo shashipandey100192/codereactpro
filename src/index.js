@@ -7,6 +7,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle"
 import "./style.css";
 import Mybootstrap from './Mybootstrap';
+import Myreactbootstrap from './Myreactbootstrap';
+import Mymui from './Mymui';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +21,8 @@ root.render(
     <Mycontact2></Mycontact2>
     <Mycustomdesign/>
     <Mybootstrap/>
+    <Myreactbootstrap/>
+    <Mymui/>
     
   </React.StrictMode>
 );

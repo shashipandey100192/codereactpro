@@ -1,0 +1,108 @@
+react.js
+=======================
+1) install
+	1) node.js
+	2) git bash
+	3) git account
+2)  what is npm ( node package manager)
+3) CLI vs GUI  
+4) flag  ( sort key)
+5) create react project 
+	npx create-react-app reactpro
+----------------------------------------
+6) port : address 
+7) code .    open in vscode
+8) directory structure 
+9) npm start   // run application / server
+10) ctrl+ c	/ close server / application 
+11) types of import and export
+	1) default  import and export
+	2) name  import and export   {}
+
+Note: function name and file name must have start from capital letter
+Note: 3000 default port(address) number
+
+12) elements wrap
+	1) html element
+	2) <></>
+	3) Fragment 
+13) file types
+	1) .js
+	2) .jsx
+	3) .ts
+	4) .tsx
+14) expression {}
+15) sorce directory( image) (folder)
+	1) src
+	2) public
+	3) online 
+---------------------------------------------------
+git
+=============================
+1) git login 
+2) create repo 
+NOte: project name and repo name must have same 
+3) git remote -v			// check your connection
+4) git remote add origin  path 		// create connection
+5) git init 	 // initialized
+6) git add --all  // add all data 
+7) git commit -m "any msg" // comment for move
+8) git 'clone paste repor path'
+9) npm install		// install node_modules
+10) git pull origin master  // pull data from git repo
+
+------------------------------------
+	1) git add --all
+	2) git commit -m ""
+	3) git pull origin master
+Note: npm install   // when add new package in project or clone first time
+Note: replace class to className
+Note: all elements must have close 
+
+git config --globla user.email "your emailid"
+git config --global user.name "your name"
+-----------------
+npm ERR! errno -4058    ( npm install -g typescript )
+-----------------------------------------------------------------
+11) react ui
+	1) custom( html, css)
+	2) bootstrap
+	3) react-bootstra
+	4) Material UI
+12) bootstrap
+	1) install
+		npm install bootstrap		// install latest version
+		npm uninstall bootstrap		// uninstall package
+		npm install bootstrap@4.0.0	// install particular version of package
+	2) import (in index.js)
+		import "bootstrap/dist/css/bootstrap.min.css";
+		import "bootstrap/dist/js/bootstrap.bundle"
+---------------------------------------------
+13) react bootstrap
+	1) npm install react-bootstra bootstrap
+	2) import
+
+14) Material UI
+	1) npm install @mui/material @emotion/react @emotion/styled
+	2) npm install @mui/material @mui/styled-engine-sc styled-components
+	3) npm install @fontsource/roboto
+15) icons 
+	1) npm install react-icons --save
+	2) import icons
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+

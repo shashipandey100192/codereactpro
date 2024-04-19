@@ -8,7 +8,7 @@ function Myabout()
 {
     return(
         <Fragment>
-            <h1>welcome  to react jsppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppppp</h1>
+            <h1>welcome  to react jsppppppppppppppppppp</h1>
             <div >skdjfjksdh fjk hsdjkfhsdname is: {a} </div>
             <div >skdjfjksdh fjk hsdjkfhsdname is: {<h4>ppppppppppppppppp</h4>} </div>
             <div >ooooooooooooooooooooooo is: {<Mycontact2/>} </div>
