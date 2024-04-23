@@ -89,6 +89,13 @@ npm ERR! errno -4058    ( npm install -g typescript )
 15) icons 
 	1) npm install react-icons --save
 	2) import icons
+-----------------------------------------------------
+16) routing (navigate)
+	1) npm install react-router-dom
+	2) import {Link, BrowserRouter, Route, Routes } 
+Note: href 	replace  to
+Note: a 	replace Link
+
 
 	
 
