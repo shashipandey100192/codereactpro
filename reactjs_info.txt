@@ -95,7 +95,8 @@ npm ERR! errno -4058    ( npm install -g typescript )
 	2) import {Link, BrowserRouter, Route, Routes } 
 Note: href 	replace  to
 Note: a 	replace Link
-
+----------------------------------------------------------
+17) jsx
 
 	
 
