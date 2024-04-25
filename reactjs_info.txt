@@ -96,7 +96,27 @@ npm ERR! errno -4058    ( npm install -g typescript )
 Note: href 	replace  to
 Note: a 	replace Link
 ----------------------------------------------------------
-17) jsx
+17) jsx  {} expression  
+18) hooks (function)
+	1) useState()
+19)  state and lifecycle 
+---------------------------------------------------------
+20) nested routing
+	<Outlet>
+21) network cell
+	1) fetch()  
+	2) axios() 	//lab
+About http response status
+	Informational responses (100 – 199)
+	Successful responses (200 – 299)
+	Redirection messages (300 – 399)
+	Client error responses (400 – 499)
+	Server error responses (500 – 599)
+
+
+
+
+
 
 	
 

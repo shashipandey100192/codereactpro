@@ -9,6 +9,10 @@ import Cusfooter from './modules/shares/Cusfooter';
 import Cuslandingpage from './modules/dashboard/Cuslandingpage';
 import Cusaboutpage from './modules/dashboard/Cusaboutpage';
 import Cuserror from './modules/shares/Cuserror';
+import Myservicelandingpage from './modules/components/service/Myservicelandingpage';
+import Myservicepage from './modules/components/service/Myservicepage';
+import Mycar from './modules/components/service/Mycar';
+import Mybike from './modules/components/service/Mybike';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +23,13 @@ root.render(
       <Routes>
         <Route path='' element={<Cuslandingpage/>}/>
         <Route path='about' element={<Cusaboutpage/>}/>
+        <Route path='service' element={<Myservicelandingpage/>}>
+            <Route path='' element={<Myservicepage/>}/>
+            <Route path='car' element={<Mycar/>}/>
+            <Route path='bike' element={<Mybike/>}/>
+            <Route path='*' element={<Cuserror/>}/>
+
+        </Route>
         <Route path='*' element={<Cuserror/>}/>
       </Routes>
    
