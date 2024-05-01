@@ -112,6 +112,13 @@ About http response status
 	Redirection messages (300 – 399)
 	Client error responses (400 – 499)
 	Server error responses (500 – 599)
+----------------------------------------------------
+22) axios
+	1) install
+		npm install axios 
+	2) import
+		import axios from 'axios';
+
 
 
 
