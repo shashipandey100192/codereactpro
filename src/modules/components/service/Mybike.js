@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 
+
 function Mybike() {
   const [mydata, setmydata] = useState([]);
   const [address, setaddress] = useState([]);
@@ -25,7 +26,7 @@ function Mybike() {
         <div className='col-12'>
           <h1 className='h1 text-center text-success bg-danger'>This is Bike server page</h1>
 
-          <table class="table table-bordered border-primary">
+          <table className="table table-bordered border-primary">
             <thead>
               <tr>
                 <th scope="col">s.no</th>
@@ -41,7 +42,7 @@ function Mybike() {
             <tbody>
              {mydata.map((d,s=1)=>{
               return(
-                <tr>
+                <tr key={d.id}>
                 <th scope="row">{++s}</th>
                 <td>{d.username}</td>
                 <td>{d.email}</td>
@@ -49,7 +50,7 @@ function Mybike() {
                 <td>{d.website}</td>
                 <td>{d.address.zipcode}</td>
                 <td>
-                  <Link to="#" className="btn btn-sm btn-info">View</Link>
+                  <Link to={`view/${d.id}`} className="btn btn-sm btn-info">View</Link>
                   <Link to="#" className="btn btn-sm btn-warning">Edit</Link>
                   <Link to="#" className="btn btn-sm btn-danger">Del</Link>
                 </td>

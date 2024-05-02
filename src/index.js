@@ -13,6 +13,7 @@ import Myservicelandingpage from './modules/components/service/Myservicelandingp
 import Myservicepage from './modules/components/service/Myservicepage';
 import Mycar from './modules/components/service/Mycar';
 import Mybike from './modules/components/service/Mybike';
+import Detailspage from './modules/components/service/Detailspage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +28,7 @@ root.render(
             <Route path='' element={<Myservicepage/>}/>
             <Route path='car' element={<Mycar/>}/>
             <Route path='bike' element={<Mybike/>}/>
+            <Route path='bike/view/:id' element={<Detailspage/>}/>
             <Route path='*' element={<Cuserror/>}/>
 
         </Route>

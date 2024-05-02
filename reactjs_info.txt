@@ -118,6 +118,11 @@ About http response status
 		npm install axios 
 	2) import
 		import axios from 'axios';
+-----------------------------------------------------------
+23) param routing
+	1) useParams()   	// hooks/function
+	key 	
+	
 
 
 
