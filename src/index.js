@@ -14,6 +14,7 @@ import Myservicepage from './modules/components/service/Myservicepage';
 import Mycar from './modules/components/service/Mycar';
 import Mybike from './modules/components/service/Mybike';
 import Detailspage from './modules/components/service/Detailspage';
+import Prants from './modules/components/drilingcomponents/Prants';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -24,6 +25,7 @@ root.render(
       <Routes>
         <Route path='' element={<Cuslandingpage/>}/>
         <Route path='about' element={<Cusaboutpage/>}/>
+        <Route path='props' element={<Prants/>}/>
         <Route path='service' element={<Myservicelandingpage/>}>
             <Route path='' element={<Myservicepage/>}/>
             <Route path='car' element={<Mycar/>}/>
@@ -32,6 +34,7 @@ root.render(
             <Route path='*' element={<Cuserror/>}/>
 
         </Route>
+
         <Route path='*' element={<Cuserror/>}/>
       </Routes>
    
