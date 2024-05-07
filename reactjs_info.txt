@@ -121,7 +121,20 @@ About http response status
 -----------------------------------------------------------
 23) param routing
 	1) useParams()   	// hooks/function
-	key 	
+	key 
+24) props (props driling) ( parent to child data transfor)
+----------------------------------------------------------
+25) form validation
+	1) lab
+		1) react-hook-form
+			1) npm install react-hook-form
+			2) import
+	2) custom
+	
+
+
+
+	
 	
 
 
