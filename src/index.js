@@ -16,6 +16,7 @@ import Mybike from './modules/components/service/Mybike';
 import Detailspage from './modules/components/service/Detailspage';
 import Prants from './modules/components/drilingcomponents/Prants';
 import Myforms from './modules/dashboard/Myforms';
+import Mycharts from './modules/dashboard/Mycharts';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -35,6 +36,7 @@ root.render(
             <Route path='*' element={<Cuserror/>}/>
         </Route>
         <Route path='forms' element={<Myforms/>}/>
+        <Route path='chart' element={<Mycharts/>}/>
         <Route path='*' element={<Cuserror/>}/>
       </Routes>
    
