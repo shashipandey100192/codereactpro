@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Cusnavbar = () => {
   return (
-    <div className="container-fluid">
+    <div className="container-fluid fixed-top">
     <div className="row">
         <div className="col-12">
             <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -34,6 +34,9 @@ const Cusnavbar = () => {
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="chart">charts</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="lazyloding">lazy</Link>
                             </li>
                             <li className="nav-item dropdown">
                                 <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

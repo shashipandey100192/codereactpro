@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{lazy,Suspense} from 'react';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle"
@@ -17,6 +17,8 @@ import Detailspage from './modules/components/service/Detailspage';
 import Prants from './modules/components/drilingcomponents/Prants';
 import Myforms from './modules/dashboard/Myforms';
 import Mycharts from './modules/dashboard/Mycharts';
+// import Mylazyloading from './Mylazyloading';
+const Myladyload = lazy(()=>import('./Mylazyloading'));
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -37,6 +39,11 @@ root.render(
         </Route>
         <Route path='forms' element={<Myforms/>}/>
         <Route path='chart' element={<Mycharts/>}/>
+        <Route path='lazyloding' element={
+          <Suspense fallback={<h1 style={{color:'red',fontSize:'60px',position:'fixed',backgroundColor:'orange',margin:'100px'}}>Loding page...</h1>}> 
+              <Myladyload></Myladyload>
+          </Suspense>
+        }/>
         <Route path='*' element={<Cuserror/>}/>
       </Routes>
    

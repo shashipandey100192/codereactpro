@@ -130,6 +130,22 @@ About http response status
 			1) npm install react-hook-form
 			2) import
 	2) custom
+------------------------------------------------------------
+26) chart (graph)
+	1) npm install recharts
+	2) import 
+27) production 
+	npm run build      // create build folder for production 
+------------------------------------------------------
+28) lazy loading
+	1) lazy()
+	2) fallback
+	3) supspance
+	4) import()
+
+
+
+
 	
 
 

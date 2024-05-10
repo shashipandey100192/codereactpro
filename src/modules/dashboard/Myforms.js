@@ -1,19 +1,27 @@
 import React, { useState } from 'react';
 import { useForm} from 'react-hook-form';
 
+
+const locald=[];
+
 function Myforms() {
 
 const [msg,setmsg]=useState(0)
-
 const customvalidation = (e)=>
 {
     setmsg(e.target.value);
     console.log(e.target.value);
+    
 }
 
 
     const {register,handleSubmit, formState: { errors }} = useForm()
-    const mysubmit = (data) => console.log(data)
+    // const mysubmit = (data) => console.log(data)
+    const mysubmit = (data)=>{
+        console.log(data);
+        locald.push(data);
+        localStorage.setItem("mydata",JSON.stringify(locald));
+    }
 
     return (
         <form onSubmit={handleSubmit(mysubmit)}> 
