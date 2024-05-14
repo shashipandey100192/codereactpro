@@ -142,6 +142,12 @@ About http response status
 	2) fallback
 	3) supspance
 	4) import()
+29) storage
+	1) local
+	2) session
+	3) cookies
+----------------------------------
+30) condition based rendering
 
 
 

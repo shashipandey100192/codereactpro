@@ -20,7 +20,7 @@ const customvalidation = (e)=>
     const mysubmit = (data)=>{
         console.log(data);
         locald.push(data);
-        localStorage.setItem("mydata",JSON.stringify(locald));
+        localStorage.setItem("localdata",JSON.stringify(locald));
     }
 
     return (

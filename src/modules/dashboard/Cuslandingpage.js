@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { Fragment, useEffect, useState } from 'react'
 import Cusfooter from '../shares/Cusfooter'
 
 function Cuslandingpage() {
@@ -19,6 +19,20 @@ const abcd=(myelement)=>{
   console.log(myelement);
 }
 
+const [ldata,ldataset]=useState([])
+const mylocadata = ()=>{
+    ldataset(JSON.parse(localStorage.getItem("localdata")));
+    // console.log(JSON.parse(localStorage.getItem("localdata")))
+    
+}
+
+useEffect(()=>{
+  mylocadata();
+},[])
+
+
+
+
   return (
     <Fragment>
    <div className='container mt-5 border'>
@@ -28,7 +42,16 @@ const abcd=(myelement)=>{
             <h1>this is ggg  name : {statevalue}</h1>
             <input type='button' value="change" onClick={abc}/>
             <input type='text' value={a} onInput={xyz}/>
-            <div>this is </div>
+            <div>local data list </div>
+        {ldata.map((a)=>{
+          return(
+            <Fragment>
+            <div>{a.firstname}</div>
+            <div>{a.email}</div>
+            </Fragment>
+          )
+        })}
+
         </div>
     </div>
    </div>

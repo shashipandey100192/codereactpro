@@ -17,6 +17,7 @@ import Detailspage from './modules/components/service/Detailspage';
 import Prants from './modules/components/drilingcomponents/Prants';
 import Myforms from './modules/dashboard/Myforms';
 import Mycharts from './modules/dashboard/Mycharts';
+import Mycontactpage from './modules/dashboard/Mycontactpage';
 // import Mylazyloading from './Mylazyloading';
 const Myladyload = lazy(()=>import('./Mylazyloading'));
 
@@ -39,6 +40,7 @@ root.render(
         </Route>
         <Route path='forms' element={<Myforms/>}/>
         <Route path='chart' element={<Mycharts/>}/>
+        <Route path='contact' element={<Mycontactpage/>}/>
         <Route path='lazyloding' element={
           <Suspense fallback={<h1 style={{color:'red',fontSize:'60px',position:'fixed',backgroundColor:'orange',margin:'100px'}}>Loding page...</h1>}> 
               <Myladyload></Myladyload>
