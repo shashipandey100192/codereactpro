@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react'
-import Cusfooter from '../shares/Cusfooter'
+import Cusfooter from '../shares/Cusfooter';
+
+import { useSelector } from 'react-redux';
 
 function Cuslandingpage() {
 
@@ -31,6 +33,7 @@ useEffect(()=>{
 },[])
 
 
+const count = useSelector((state) => state.counter.value)
 
 
   return (
@@ -38,7 +41,7 @@ useEffect(()=>{
    <div className='container mt-5 border'>
     <div className='row'>
         <div className='col-12 border' onClick={abcd}>
-            <h1>landing page</h1>
+            <h1>landing page {count}</h1>
             <h1>this is ggg  name : {statevalue}</h1>
             <input type='button' value="change" onClick={abc}/>
             <input type='text' value={a} onInput={xyz}/>

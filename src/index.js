@@ -1,11 +1,11 @@
 import React,{lazy,Suspense} from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import ReactDOM from 'react-dom/client';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle"
 import "./style.css";
 import Cusnavbar from './modules/shares/Cusnavbar';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Cusfooter from './modules/shares/Cusfooter';
+
 import Cuslandingpage from './modules/dashboard/Cuslandingpage';
 import Cusaboutpage from './modules/dashboard/Cusaboutpage';
 import Cuserror from './modules/shares/Cuserror';
@@ -18,6 +18,10 @@ import Prants from './modules/components/drilingcomponents/Prants';
 import Myforms from './modules/dashboard/Myforms';
 import Mycharts from './modules/dashboard/Mycharts';
 import Mycontactpage from './modules/dashboard/Mycontactpage';
+import Myreduxdashboad from './modules/reduxjs/Myreduxdashboad';
+import { Provider } from 'react-redux';
+import { Mystore } from './modules/reduxjs/Mystore';
+
 // import Mylazyloading from './Mylazyloading';
 const Myladyload = lazy(()=>import('./Mylazyloading'));
 
@@ -26,6 +30,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
+    <Provider store={Mystore}>
     <Cusnavbar/>
       <Routes>
         <Route path='' element={<Cuslandingpage/>}/>
@@ -46,9 +51,11 @@ root.render(
               <Myladyload></Myladyload>
           </Suspense>
         }/>
+        <Route path='reduxpage' element={<Myreduxdashboad/>}/>
+
         <Route path='*' element={<Cuserror/>}/>
       </Routes>
-   
+      </Provider>
     </BrowserRouter>
   </React.StrictMode>
 );

@@ -148,6 +148,29 @@ About http response status
 	3) cookies
 ----------------------------------
 30) condition based rendering
+31) redux
+	1) configureStore
+	2) reducer
+	3) Provider
+	4) store
+	5) createSlice
+	6) useSelector
+	7) useDispatch
+	8) dispatch
+	9) state
+	10) actions
+	A) install
+		npm install @reduxjs/toolkit react-redux
+	B) create store
+		create Mystore.js config 
+	C) wrap whole application
+		<Provider store={<Mystore/>}></Provider>
+	D) create actions 
+		
+	
+
+	
+
 
 
 
