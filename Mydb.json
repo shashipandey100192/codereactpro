@@ -1,0 +1,22 @@
+{
+    "student":[
+        {
+            "sno":1,
+            "name":"kumar",
+            "age":20,
+            "email":"kumar@gmail.com"
+        },
+        {
+            "sno":2,
+            "name":"kumar",
+            "age":20,
+            "email":"kumar@gmail.com"
+        },
+        {
+            "sno":3,
+            "name":"kumar",
+            "age":20,
+            "email":"kumar@gmail.com"
+        }
+    ]
+}

@@ -21,6 +21,9 @@ import Mycontactpage from './modules/dashboard/Mycontactpage';
 import Myreduxdashboad from './modules/reduxjs/Myreduxdashboad';
 import { Provider } from 'react-redux';
 import { Mystore } from './modules/reduxjs/Mystore';
+import Loginpage from './modules/jsoncrud/Loginpage';
+import Myregistorpage from './modules/jsoncrud/Myregistorpage';
+import Mylandingpage from './modules/jsoncrud/Mylandingpage';
 
 // import Mylazyloading from './Mylazyloading';
 const Myladyload = lazy(()=>import('./Mylazyloading'));
@@ -33,8 +36,10 @@ root.render(
     <Provider store={Mystore}>
     <Cusnavbar/>
       <Routes>
-        <Route path='' element={<Cuslandingpage/>}/>
+        <Route path='' element={<Loginpage/>}/>
+        <Route path='registor' element={<Myregistorpage/>}/>
         <Route path='about' element={<Cusaboutpage/>}/>
+        <Route path='dashboard' element={<Mylandingpage/>}/>
         <Route path='props' element={<Prants/>}/>
         <Route path='service' element={<Myservicelandingpage/>}>
             <Route path='' element={<Myservicepage/>}/>

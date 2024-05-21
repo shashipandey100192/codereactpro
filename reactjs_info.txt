@@ -165,7 +165,9 @@ About http response status
 		create Mystore.js config 
 	C) wrap whole application
 		<Provider store={<Mystore/>}></Provider>
-	D) create actions 
+	D) create actions
+---------------------------------------
+ 
 		
 	
 
