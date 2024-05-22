@@ -22,8 +22,8 @@ function Loginpage() {
                 </div>
                 <div className='col-md-12'>
                     <div className="mb-3 text-center">
-                        <input type="submit" className="btn btn-outline-success" value="submit" />
-                        <Link to="registor">New Registor</Link>
+                        <input type="submit" className="btn btn-outline-success btn-sm" value="submit" />
+                        <Link to="registor" className='me-3 ms-3'>New Registor</Link>
                         <Link to="dashboard">dashboard</Link>
                     </div>
                 </div>

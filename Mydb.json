@@ -1,22 +1,67 @@
 {
-    "student":[
-        {
-            "sno":1,
-            "name":"kumar",
-            "age":20,
-            "email":"kumar@gmail.com"
-        },
-        {
-            "sno":2,
-            "name":"kumar",
-            "age":20,
-            "email":"kumar@gmail.com"
-        },
-        {
-            "sno":3,
-            "name":"kumar",
-            "age":20,
-            "email":"kumar@gmail.com"
-        }
-    ]
+  "student": [
+    {
+      "id": "feb1",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "804a",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "23a0",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "690c",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "c2f9",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "da29",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "74ea",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "39cc",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    },
+    {
+      "id": "38c2",
+      "name": "poojasingh",
+      "email": "pandey@gmail.com",
+      "pass": "20",
+      "age": "50"
+    }
+  ]
 }

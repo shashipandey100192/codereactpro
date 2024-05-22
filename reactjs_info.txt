@@ -167,7 +167,13 @@ About http response status
 		<Provider store={<Mystore/>}></Provider>
 	D) create actions
 ---------------------------------------
- 
+31) build ( production)
+	npm run build
+32) json server
+	1) install 
+		npm install json-server
+	2) run server
+		json-server --watch -p 3333 		
 		
 	
 
