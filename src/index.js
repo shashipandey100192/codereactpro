@@ -25,6 +25,7 @@ import Loginpage from './modules/jsoncrud/Loginpage';
 import Myregistorpage from './modules/jsoncrud/Myregistorpage';
 import Mylandingpage from './modules/jsoncrud/Mylandingpage';
 import Mycreatenew from './modules/jsoncrud/Mycreatenew';
+import Myeditpage from './modules/jsoncrud/Myeditpage';
 
 // import Mylazyloading from './Mylazyloading';
 const Myladyload = lazy(()=>import('./Mylazyloading'));
@@ -42,6 +43,7 @@ root.render(
         <Route path='about' element={<Cusaboutpage/>}/>
         <Route path='dashboard' element={<Mylandingpage/>}/>
         <Route path='dashboard/addrecord' element={<Mycreatenew/>}/>
+        <Route path='dashboard/edit/:id' element={<Myeditpage/>}/>
         <Route path='props' element={<Prants/>}/>
         <Route path='service' element={<Myservicelandingpage/>}>
             <Route path='' element={<Myservicepage/>}/>

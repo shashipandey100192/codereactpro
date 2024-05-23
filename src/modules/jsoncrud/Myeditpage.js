@@ -1,35 +1,46 @@
-import React, { useState } from 'react'
+import React,{useEffect, useState} from 'react';
 import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 
-function Mycreatenew() {
+function Myeditpage() {
+
     const navigat = useNavigate();
- const [myfiled,changefld]=useState({
-    name:"",
-    email:"",
-    pass:"",
-    age:""
- })
+    const {id}=useParams();
 
- const myadddata = (data)=>{
-    data.preventDefault();
-axios.post('http://localhost:3333/student',myfiled).then((a)=>{
-    console.log(a);
-    navigat("/dashboard");
-})
-
+    const [myfiled, changefld] = useState({
+        name: "",
+        email: "",
+        pass: "",
+        age: ""
+    });
+    
+const fetchsinglerecord = ()=>{
+    axios.get(`http://localhost:3333/student/${id}`).then((d)=>{
+        changefld(d.data);
+    })
 }
 
 
 
 
+   useEffect(()=>{
+    fetchsinglerecord();
+   },[]);
 
+    const myupdate = (data) => {
+        data.preventDefault();
+        axios.put(`http://localhost:3333/student/${id}`, myfiled).then((a) => {
+            console.log(a);
+            navigat("/dashboard");
+        })
+
+    }
   return (
-    <form onSubmit={myadddata}>
+    <form onSubmit={myupdate}>
     <div className='container mt-5 p-3 shadow bg-light' style={{width:'300px'}}>
     <div className='row'>
         <div className='col-12'>
-            <h4>Add New Recond page</h4>
+            <h4>Edit page</h4>
         </div>
         <div className='col-md-12'>
             <div className="mb-3">
@@ -58,7 +69,7 @@ axios.post('http://localhost:3333/student',myfiled).then((a)=>{
         <div className='col-md-12'>
             <div className="mb-3 text-center">
               
-                <input type="submit" className="btn btn-outline-success" value="Add new" />
+                <input type="submit" className="btn btn-outline-success" value="Edit record" />
             </div>
         </div>
     </div>
@@ -67,4 +78,4 @@ axios.post('http://localhost:3333/student',myfiled).then((a)=>{
   )
 }
 
-export default Mycreatenew
+export default Myeditpage

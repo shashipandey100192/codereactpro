@@ -173,7 +173,18 @@ About http response status
 	1) install 
 		npm install json-server
 	2) run server
-		json-server --watch -p 3333 		
+		json-server --watch -p 3333 
+		
+useState()
+useEffect()
+useNavigate()
+useParam()
+useSelect
+useDespatch()
+useRef()
+useContext()
+useForm()
+
 		
 	
 
